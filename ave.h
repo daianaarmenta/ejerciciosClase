@@ -4,7 +4,7 @@
 using namespace std;
 
 class Ave{
-    private:
+    protected: //permite que esta clase y las demás accedan a este atributo
     string nombre;
     public:
     Ave();

@@ -1,10 +1,14 @@
+#ifndef AGUILA_H
+#define AGUILA_H
 #include <iostream>
 #include "ave.h"
 using namespace std;
 
 class Aguila:Ave{
-    private:
-    string nombre;
     public:
-
+    Aguila();
+    Aguila(string);
+    void volar();
 };
+
+#endif
