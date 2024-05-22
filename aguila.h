@@ -2,12 +2,12 @@
 #define AGUILA_H
 #include <iostream>
 #include "ave.h"
-using namespace std;
+#include <string>
 
 class Aguila:Ave{
     public:
     Aguila();
-    Aguila(string);
+    Aguila(std::string);
     void volar();
 };
 

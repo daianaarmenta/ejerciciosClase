@@ -1,10 +1,11 @@
 #include <iostream>
 #include <string>
 #include "ave.h"
-using namespace std;
+using std::cout;
+using std::endl;
 
 Ave::Ave(){}
-Ave::Ave(string _name){
+Ave::Ave(std::string _name){
     nombre = _name;
 }
 void Ave::volar(){

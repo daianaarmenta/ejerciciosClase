@@ -2,12 +2,12 @@
 #define PINGUINO_H
 #include "ave.h"
 #include <iostream>
-using namespace std;
+#include <string>
 
 class Pinguino:Ave{
     public:
     Pinguino();
-    Pinguino(string);
+    Pinguino(std::string);
     void volar();
 };
 

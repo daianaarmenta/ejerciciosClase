@@ -2,7 +2,6 @@
 #include "ave.h"
 #include "aguila.h"
 #include "pinguino.h"
-using namespace std;
 
 int main(){
     Ave ave1("Piolin");

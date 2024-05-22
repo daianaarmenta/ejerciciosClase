@@ -1,14 +1,14 @@
 #ifndef AVE_H
 #define AVE_H
 #include <iostream>
-using namespace std;
+#include <string>
 
 class Ave{
     protected: //permite que esta clase y las demás accedan a este atributo
-    string nombre;
+    std::string nombre;
     public:
     Ave();
-    Ave(string);
+    Ave(std::string);
     void volar();
 };
 
