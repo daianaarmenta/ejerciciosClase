@@ -1,5 +1,7 @@
 #include <iostream>
 #include "impresora.h"
+#include "miexcepcion.h"
+#include <string>
 
 using std::string;
 using std::cout;
@@ -16,6 +18,8 @@ void Impresora::imprimir(string texto)
     int hojasUsadas = texto.size()/2;
     if(hojasUsadas > numHojas)
     {
+        MiExcepcion excep("Hubo una excepcion");
+        throw (excep);
         string mensaje = "El numero de hojas usadas excede el numero de hojas disponibles ";
     }
     cout << "Imprimiendo... " << endl;
@@ -27,5 +31,5 @@ void Impresora::imprimir(string texto)
 
 void Impresora::recargar(int num)
 {
-    cout << "Recargando..." << num << endl;
+    numHojas += num;
 }

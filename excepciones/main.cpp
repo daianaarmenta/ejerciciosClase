@@ -1,5 +1,7 @@
 #include <iostream>
 #include "impresora.h"
+#include "miexcepcion.h"
+#include <string>
 
 using std::cout;
 using std::endl;
@@ -20,12 +22,17 @@ int main()
     {
         cout << "atrapado como cadena de caracteres: " << mensaje << endl;
     }
+    catch(MiExcepcion &excep)
+    {
+        cout << "Atrapé una MiExcepcion" << endl;
+        excep.imprimir();
+    }
     catch(...)
     {
         cout << "atrapé la excepción en el catch todo" << endl;
 
     }
-    //como cachar un arreglo de caracteres
+
 
     return 0;
 }

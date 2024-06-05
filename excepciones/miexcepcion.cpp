@@ -8,3 +8,8 @@ MiExcepcion::MiExcepcion(string _mensaje)
 {
     mensaje = _mensaje;
 }
+
+void MiExcepcion::imprimir()
+{
+    std::cout << mensaje << std::endl;
+}
